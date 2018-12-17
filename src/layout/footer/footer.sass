@@ -2,3 +2,29 @@
   flex-grow: 0
   flex-shrink: 0
   flex-basis: auto
+  height: 45px
+
+  &__content
+    display: flex
+    justify-content: flex-end
+    background-color: #181e2c
+    height: 100%
+
+  &__data
+    display: flex
+    background-color: #1f2637
+    width: 55px
+    transition: opacity 0.3s
+    &:hover,
+    &:focus
+      cursor: pointer
+      opacity: 0.5
+
+    &:last-child
+      background-color: #15a4fa
+
+  &__link
+    display: block
+    margin: auto
+    line-height: 0
+

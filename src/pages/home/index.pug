@@ -1,17 +1,34 @@
 extends /layout/app
 
 block content
-  .container
-    | CONTENT
-    #test-vue
-    #test-react
-    h1 example block
-    .block-example(style='height: 100px')
-      | Example block
-    h1 example require image
-    img(src='images/square.png' alt='')
-    div(style="background-image: url(${require('images/square3.png')}); height: 100px")
+ .main
+   .container
+     .main__content
+        .main__left
 
-    - var img = 'images/square4.png'
-    div(style="background-image: url(${require('" + img + "')}); height: 100px")
-    .test-scss test sass-resources in scss file
+        .main__right
+          .main__header
+            h1.main__title Browse Available Books
+            .main__wrapper
+              .main__panel
+                ul.main__menu
+                  li.main__item All Books
+                  li.main__item Most Recent
+                  li.main__item Most Popular
+                  li.main__item Free Books
+
+                .main__search
+                  input(type="text").main__input
+                  img(src="").main__img-serch
+
+          .main__boocks
+            .main__boock
+              img(src="#").main__img
+              .main__book-title
+              .main__author
+              .main__assessment
+
+
+
+
+

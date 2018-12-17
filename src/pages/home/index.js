@@ -7,8 +7,6 @@ import './index.pug';
 
 import './test-scss.scss';
 
-import tmpPug from './examplate-inline.inline.pug';
-
 export default () => {
   console.log(tmpPug());
 
