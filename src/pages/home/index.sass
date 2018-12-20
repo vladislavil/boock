@@ -194,7 +194,21 @@
     flex-wrap: wrap
     height: 757px
     padding: 30px 20px 0
-    overflow-y: scroll
+    overflow-y: auto
+
+    &::-webkit-scrollbar
+      width: 6px
+
+    &::-webkit-scrollbar-thumb
+      padding: 10px 0
+      background: #ccd5e4
+      border-radius: 10px
+
+    &::-webkit-scrollbar-thumb
+      &:hover
+        background: #ccd5e0
+        cursor: pointer
+
 
   &__book
     width: 19%
