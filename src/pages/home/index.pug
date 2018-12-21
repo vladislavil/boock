@@ -45,18 +45,40 @@ block content
             .main__text.main__text--orange Best Of List
             .main__text.main__text--blue Classic Novels
             .main__text.main__text--violet Non Fiction
+          .main__history
+            .main__added
+              img(src="#").main__img
+              .main__data You added &nbsp;
+                span.main__highlight
+                  | Fight Club &nbsp;
+                | by &nbsp;
+                span.main__highlight
+                  | Chuck Palahniuk &nbsp;
+                | to your &nbsp;
+                span.main__highlight
+                  | Must Read Titles.
+              .main__time-ago 24 minutes ago
+
         .main__right
           .main__header
             h1.main__title Browse Available Books
             .main__wrapper
               .main__panel
                 ul.main__menu
-                  li.main__item All Books
-                  li.main__item Most Recent
-                  li.main__item Most Popular
-                  li.main__item Free Books
+                  li.main__item
+                    a(href="#").main__item-link
+                      | All Books
+                  li.main__item
+                    a(href="#").main__item-link
+                      | Most Recent
+                  li.main__item
+                    a(href="#").main__item-link
+                      | Most Popular
+                  li.main__item
+                    a(href="#").main__item-link
+                      | Free Books
                 .main__search
-                  input(type="text").main__input
+                  input(type="text" placeholder="Enter Keywords").main__input
                   img(src="images/search.png").main__img-search
           .main__books
             .main__book
