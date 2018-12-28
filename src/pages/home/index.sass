@@ -52,6 +52,7 @@
     height: 15px
     margin-left: 20px
     margin-right: 10px
+    flex-shrink: 0
 
   &__markers
     height: 183px
@@ -127,9 +128,15 @@
       color: #f2795a
 
   &__history
-    height: 100%
+    height: 328px
     background-color: #1f2637
     border-top: 1px solid #282f41
+
+  &__added
+    padding: 36px 0 36px
+
+    &:first-child
+      padding-bottom: 0
 
   &__data
     color: #4f5a6f
@@ -137,10 +144,15 @@
 
   &__time-ago
     color: #4f5a6f
+    margin-left: 48px
 
   &__highlight
     color: #677b92
 
+  &__data-wrapper
+    display: flex
+    align-items: center
+    margin-bottom: 15px
 
   &__right
     flex-grow: 1
@@ -190,7 +202,6 @@
       color: #ffffff
       background-color: #97b3ce
 
-
   &__search
     position: relative
     width: 398px
@@ -211,6 +222,7 @@
     right: 16px
     top: 50%
     transform: translate(-50%, -50%)
+    cursor: pointer
 
   &__books
     display: flex
@@ -238,6 +250,10 @@
   &__book
     width: 19%
     margin-bottom: 30px
+    cursor: pointer
+
+    &:hover
+      opacity: 0.8
 
   &__author
     color: #6f7d95
