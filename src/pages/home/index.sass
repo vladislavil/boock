@@ -173,6 +173,11 @@
     height: 50px
     margin: 0 20px
 
+    +max-w($tablet)
+      height: 100px
+      flex-direction: column
+      align-items: flex-start
+
   &__wrapper
     border-top: 1px solid #dadfea
     border-bottom: 1px solid #dadfea
@@ -182,17 +187,24 @@
     flex-grow: 1
 
   &__item
+    margin-right: 25px
     color: #99a3bb
     background-color: transparent
     max-width: fit-content
     flex-grow: 1
     flex-shrink: 0
 
+    &:last-child
+      margin-right: 0
+
+    +max-w($tablet)
+      margin-right: 10px
+
   &__item-link
+    display: block
     width: 100%
     height: 100%
     border-radius: 25px
-    margin-right: 25px
     padding: 6px 20px
     font-size: 12px
     transition: background-color 0.3s, color 0.3s
@@ -205,6 +217,9 @@
   &__search
     position: relative
     width: 398px
+
+    +max-w($laptop_sm)
+      width: 250px
 
   &__input
     width: 100%
@@ -246,14 +261,17 @@
         background: #99a3bb
         cursor: pointer
 
-
   &__book
     width: 19%
     margin-bottom: 30px
     cursor: pointer
 
-    &:hover
+    &:hover,
+    &:focus
       opacity: 0.8
+
+    +max-w($tablet)
+      width: 45%
 
   &__author
     color: #6f7d95
